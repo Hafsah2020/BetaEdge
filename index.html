@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;family=Inter:wght@400&amp;family=Montserrat:wght@400&amp;family=Fredoka:wght@400&amp;family=Comic+Neue:wght@400&amp;display=swap" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Crackit! - Your Brain's Playground</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+          --white: #FFFFFF;
+          --electric-blue: #00BFFF;
+          --deep-navy: #1A1A2E;
+          --vivid-purple: #8A2BE2;
+          --deep-navy-text: #1A1A2E;
+          --bright-orange: #FF8C00;
+          --sunflower-yellow: #FFD700;
+        }
+        body {
+          font-family: 'Inter', 'Montserrat', sans-serif;
+          background-color: var(--deep-navy);
+          color: var(--white);
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 700;
+        }
+        .callout {
+          font-family: 'Fredoka', 'Comic Neue', cursive;
+        }
+        .hero-bg {
+          background-color: var(--deep-navy);
+          position: relative;
+          overflow: hidden;
+        }
+        .hero-bg::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 200%;
+          height: 200%;
+          transform: translate(-50%, -50%);
+          background-image:
+            radial-gradient(circle at 50% 50%, var(--vivid-purple) 0%, transparent 40%);
+          opacity: 0.1;
+          z-index: 0;
+        }
+        .hero-content {
+          position: relative;
+          z-index: 1;
+        }
+        .pulsating-glow {
+          animation: pulsating-glow 3s infinite ease-in-out;
+        }
+        @keyframes pulsating-glow {
+          0%,
+          100% {
+            filter: drop-shadow(0 0 10px var(--electric-blue)) drop-shadow(0 0 20px var(--vivid-purple));
+          }
+          50% {
+            filter: drop-shadow(0 0 20px var(--bright-orange)) drop-shadow(0 0 30px var(--sunflower-yellow));
+          }
+        }
+        .crackit-text span {
+          display: inline-block;
+          animation: fluid-text 2.5s infinite ease-in-out;
+        }
+        .crackit-text span:nth-child(1) {
+          animation-delay: 0.1s;
+        }
+        .crackit-text span:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+        .crackit-text span:nth-child(3) {
+          animation-delay: 0.3s;
+        }
+        .crackit-text span:nth-child(4) {
+          animation-delay: 0.4s;
+        }
+        .crackit-text span:nth-child(5) {
+          animation-delay: 0.5s;
+        }
+        .crackit-text span:nth-child(6) {
+          animation-delay: 0.6s;
+        }
+        .crackit-text span:nth-child(7) {
+          animation-delay: 0.7s;
+        }
+        .crackit-text span:nth-child(8) {
+          animation-delay: 0.8s;
+        }
+        @keyframes fluid-text {
+          0%,
+          100% {
+            transform: translateY(0) scale(1);
+          }
+          50% {
+            transform: translateY(-5px) scale(1.05);
+          }
+        }
+        .social-icon {
+          transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .social-icon:hover {
+          transform: scale(1.1);
+          color: var(--sunflower-yellow);
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--deep-navy)] text-[var(--white)]">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<main class="flex-grow">
+<section class="hero-bg text-center py-24 px-6 flex flex-col items-center justify-center min-h-[70vh]">
+<div class="hero-content flex flex-col items-center space-y-10">
+<div class="relative w-56 h-56">
+<img alt="Abstract brain graphic" class="w-full h-full object-contain pulsating-glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz-_2l1JVRei8G2wP1Pgh3p73Qn_K9gEma3m5_9CG5mC6_y-QZTDOpnk7CZMEZJlHFAwqEzfhtly7H1EyKsh5F3gEqYEqqeTV7f3Q5NZZvTZPOPwp7OfbeKOwSxeDMJoJsH26Yz-hK3NppC5tU-i8K2KWHH1BBfEFqSIRTo7LoHc_g17acK7DzoUuNwzAS5HO58wMaDFejQZznod2FhK8NPA1rBxDyMfZPeW7aVziCT9QL7ddN4ostsineaqvAeTt83g1JxuX43A"/>
+</div>
+<h1 class="text-7xl font-bold text-[var(--white)] crackit-text">
+<span class="text-[var(--electric-blue)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">C</span><span class="text-[var(--electric-blue)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">r</span><span class="text-[var(--electric-blue)]" style="text-shadow: -2px -2px 0 var(--viv id-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">a</span><span class="text-[var(--electric-blue)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">c</span><span class="text-[var(--electric-blue)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">k</span><span class="text-[var(--bright-orange)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">i</span><span class="text-[var(--bright-orange)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">t</span><span class="text-[var(--sunflower-yellow)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">!</span>
+</h1>
+<p class="text-2xl text-[var(--white)] callout max-w-lg mx-auto">Playful, science-driven challenges to sharpen your logic and problem-solving skills.</p>
+<a class="mt-12 bg-[var(--sunflower-yellow)] text-[var(--deep-navy)] font-bold py-4 px-10 rounded-full text-xl transform transition-transform duration-300 ease-in-out shadow-lg hover:bg-[var(--bright-orange)] hover:scale-105" href="#community"> Join the WhatsApp Community </a>
+</div>
+</section>
+<section class="py-16 px-6 bg-[var(--white)] text-[var(--deep-navy-text)]">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold tracking-tight text-[var(--vivid-purple)]">About Crackit!</h2>
+<p class="mt-4 text-lg max-w-2xl mx-auto font-['Montserrat']">Ready to train your brain to think sharper, faster, and smarter? Crackit! is your daily dose of fun, science-backed challenges designed to boost your problem-solving superpowers. We're all about making you a better thinker for your exams, your job, and your everyday life. Let's get cracking!</p>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 px-6">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold tracking-tight text-[var(--vivid-purple)]">What You'll Get</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="text-center p-6 bg-gray-50 rounded-2xl shadow-sm transition hover:shadow-lg hover:-translate-y-1 text-[var(--deep-navy-text)]">
+<div class="inline-block p-4 bg-[var(--electric-blue)] rounded-full mb-4">
+<span class="material-symbols-outlined text-white text-4xl"> feed </span>
+</div>
+<h3 class="text-xl font-bold text-[var(--electric-blue)]">Exams &amp; Assessments</h3>
+<p class="text-base mt-2">Nail your GMAT, GRE, job tests, case studies, and aptitude tests with targeted brain-training.</p>
+</div>
+<div class="text-center p-6 bg-gray-50 rounded-2xl shadow-sm transition hover:shadow-lg hover:-translate-y-1 text-[var(--deep-navy-text)]">
+<div class="inline-block p-4 bg-[var(--bright-orange)] rounded-full mb-4">
+<span class="material-symbols-outlined text-white text-4xl"> lightbulb </span>
+</div>
+<h3 class="text-xl font-bold text-[var(--bright-orange)]">Real-Life Problem Solving</h3>
+<p class="text-base mt-2">Apply science and math principles to conquer everyday challenges with logic and flair.</p>
+</div>
+<div class="text-center p-6 bg-gray-50 rounded-2xl shadow-sm transition hover:shadow-lg hover:-translate-y-1 text-[var(--deep-navy-text)]">
+<div class="inline-block p-4 bg-[var(--sunflower-yellow)] rounded-full mb-4">
+<span class="material-symbols-outlined text-white text-4xl"> mood </span>
+</div>
+<h3 class="text-xl font-bold text-[var(--sunflower-yellow)]">Creative Thinking</h3>
+<p class="text-base mt-2">Spark "aha!" moments with our mix of humor, games, and relatable content.</p>
+</div>
+<div class="text-center p-6 bg-gray-50 rounded-2xl shadow-sm transition hover:shadow-lg hover:-translate-y-1 text-[var(--deep-navy-text)]">
+<div class="inline-block p-4 bg-[var(--vivid-purple)] rounded-full mb-4">
+<span class="material-symbols-outlined text-white text-4xl"> groups </span>
+</div>
+<h3 class="text-xl font-bold text-[var(--vivid-purple)]">Community Learning</h3>
+<p class="text-base mt-2">Join a tribe of curious minds who love cracking challenges together.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-[var(--deep-navy)] py-16 px-6">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold tracking-tight text-[var(--white)]">From the Crackit! Blog</h2>
+<p class="mt-4 text-lg max-w-2xl mx-auto text-slate-300 callout">Fresh insights to fuel your curiosity.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<a class="block group" href="#">
+<div class="bg-[rgba(255,255,255,0.05)] rounded-2xl overflow-hidden transition-all duration-300 hover:bg-[rgba(255,255,255,0.1)] hover:shadow-2xl hover:shadow-[var(--electric-blue)]/20">
+<div class="flex items-center p-4 space-x-4">
+<div class="flex-shrink-0">
+<img alt="Thumbnail for 'The Art of Deduction'" class="w-20 h-20 rounded-lg object-cover border-2 border-[var(--electric-blue)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJwE2s_zZ7TL_Ej3iGZab_AsT7RivunJbeAVivMCs8qiJv95FzM3NlA-otS1G89MaOhziiHilq3bUlAg_CB6ljfY1lLwjph471KHUgzxNfkelEd2Jla86hd5_4jsNiRfMKVup4f9cQDiL45pFZgRdeOAGOrcCKoVFWT58rLhihHx7qy1w-TOxQ8O0xjNrHeubsbbe02z8kN3Ytu2dnzn8qH2oP58VIcpo2HDFhK0dvRK6B6NFNJq6d7-YkGaB6Mc3dCOvK35axsQ"/>
+</div>
+<div class="flex-1">
+<h3 class="text-lg font-bold text-white transition-colors duration-300 group-hover:text-[var(--electric-blue)]">The Art of Deduction: Thinking Like Sherlock</h3>
+</div>
+</div>
+</div>
+</a>
+<a class="block group" href="#">
+<div class="bg-[rgba(255,255,255,0.05)] rounded-2xl overflow-hidden transition-all duration-300 hover:bg-[rgba(255,255,255,0.1)] hover:shadow-2xl hover:shadow-[var(--bright-orange)]/20">
+<div class="flex items-center p-4 space-x-4">
+<div class="flex-shrink-0">
+<img alt="Thumbnail for '5 Paradoxes That Will Blow Your Mind'" class="w-20 h-20 rounded-lg object-cover border-2 border-[var(--bright-orange)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7Swiem45ZYo6ZsN837Ec2hT9L1kg23HrUd4Ki34n6ebUtEnNr2cFv8SuALy0CtIDWcH_irj716D2UZ-yYVHLH2FuzPvithVxdntr5DAF9qsibcJEwEHdz5xz7rYRdCYMzoofV7zvZmuUbrTpEccV8wCIdiIS-FLc7HBL5uA5scyRKgg94QUf0u-fV317XD6NzsXwWoToOJOPuSAaQ0qUd_OV6k7c86a5e1SrVqRjLGQrqxnxEQRrhGyrP9TycgnKdGInxEq5-QA"/>
+</div>
+<div class="flex-1">
+<h3 class="text-lg font-bold text-white transition-colors duration-300 group-hover:text-[var(--bright-orange)]">5 Paradoxes That Will Blow Your Mind</h3>
+</div>
+</div>
+</div>
+</a>
+<a class="block group" href="#">
+<div class="bg-[rgba(255,255,255,0.05)] rounded-2xl overflow-hidden transition-all duration-300 hover:bg-[rgba(255,255,255,0.1)] hover:shadow-2xl hover:shadow-[var(--sunflower-yellow)]/20">
+<div class="flex items-center p-4 space-x-4">
+<div class="flex-shrink-0">
+<img alt="Thumbnail for 'Problem Solving in the Real World'" class="w-20 h-20 rounded-lg object-cover border-2 border-[var(--sunflower-yellow)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv8E5mTUphezn7T5ENlCuENxPdFEtFg_SAlUssK2YN6WKBLXilPHptx-S8diUzxfiIaFfDarbRTeTyg995GKpRxEMaS2wFGxLm3reQVnQLE2BxfEoEr_jzDy8zG9EMg__cPZdUjyM8p7FP985r2EYOIh2ZGN_o2QacahMOU1Kk60RrNFW1j7dQ-hbEXrMM4h3RycKRH_-NBGbilohmVVxaTeL24fpmd8jPdfoDFCGBqVNNch3nxxd7QRBg5MHC3TtbLxalDFlfYw"/>
+</div>
+<div class="flex-1">
+<h3 class="text-lg font-bold text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]">Problem Solving in the Real World: Beyond the Textbook</h3>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="text-center mt-12">
+<a class="bg-transparent border-2 border-[var(--sunflower-yellow)] text-[var(--sunflower-yellow)] font-bold py-3 px-8 rounded-full text-lg transform hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-[var(--sunflower-yellow)] hover:text-[var(--deep-navy)] shadow-lg hover:shadow-[var(--sunflower-yellow)]/30" href="#"> Explore All Resources </a>
+</div>
+</div>
+</section>
+<section class="bg-[var(--vivid-purple)] py-20 px-6">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-4xl font-bold tracking-tight text-white">Stay Ahead of the Curve!</h2>
+<p class="mt-4 text-lg text-white/90 callout">Subscribe to our newsletter for exclusive content, early access to challenges, and brain-boosting tips delivered straight to your inbox.</p>
+<form class="mt-8 flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+<input class="flex-grow w-full px-5 py-4 rounded-full text-lg text-[var(--deep-navy-text)] bg-white/90 placeholder:text-gray-500 focus:outline-none focus:ring-4 focus:ring-[var(--sunflower-yellow)] transition-all duration-300" placeholder="Your best email" type="email"/>
+<button class="bg-[var(--sunflower-yellow)] text-[var(--deep-navy)] font-bold py-4 px-8 rounded-full text-lg transform hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg hover:bg-[var(--bright-orange)]" type="submit">Subscribe</button>
+</form>
+</div>
+</section>
+<section class="bg-white text-[var(--deep-navy-text)] py-20 px-6" id="community">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-4xl font-bold tracking-tight text-[var(--vivid-purple)]">Join the Community</h2>
+<p class="mt-4 text-lg text-slate-600 font-['Montserrat']">Connect with fellow thinkers, get exclusive content, and be the first to know about new challenges.</p>
+<div class="mt-8">
+<a class="bg-[var(--sunflower-yellow)] text-[var(--deep-navy)] font-bold py-4 px-8 rounded-full text-lg transform hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg hover:bg-[var(--bright-orange)]" href="#"> Join our WhatsApp Community </a>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[var(--deep-navy)] text-white py-12 px-6 border-t border-[rgba(255,255,255,0.1)]">
+<div class="max-w-4xl mx-auto flex flex-col items-center space-y-8">
+<h3 class="text-2xl font-bold text-center">Contact Us</h3>
+<div class="flex flex-col items-center space-y-4">
+<a class="social-icon group flex items-center space-x-3 rounded-full bg-[rgba(255,255,255,0.05)] px-6 py-3 transition-all duration-300 hover:bg-[rgba(255,255,255,0.1)]" href="#">
+<i class="fab fa-instagram text-3xl text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]"></i>
+<span class="font-bold text-xl text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]">@CrackitHQ</span>
+</a>
+<a class="social-icon group flex items-center space-x-3 rounded-full bg-[rgba(255,255,255,0.05)] px-6 py-3 transition-all duration-300 hover:bg-[rgba(255,255,255,0.1)]" href="mailto:hello@crackit.co">
+<span class="material-symbols-outlined text-3xl text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]">
+                        mail
+                    </span>
+<span class="font-bold text-xl text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]">hello@crackit.co</span>
+</a>
+<a class="social-icon group flex items-center space-x-3 rounded-full bg-[rgba(255,255,255,0.05)] px-6 py-3 transition-all duration-300 hover:bg-[rgba(255,255,255,0.1)]" href="tel:+1234567890">
+<span class="material-symbols-outlined text-3xl text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]">
+                        phone
+                    </span>
+<span class="font-bold text-xl text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]">+1 (234) 567-890</span>
+</a>
+</div>
+<div class="text-center callout text-lg bg-[rgba(255,255,255,0.1)] py-3 px-6 rounded-full shadow-lg mt-8">
+<p class="text-[var(--sunflower-yellow)]">Crackit! Bootcamp coming soon…</p>
+</div>
+<p class="text-center text-sm text-slate-400 mt-8">© 2024 Crackit! All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+
+</body></html>
