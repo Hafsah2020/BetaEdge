@@ -1,191 +1,343 @@
 <!DOCTYPE html>
-<html lang="en">
-  
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crackit! - Your Brain's Playground</title>
-  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
-
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400&family=Montserrat:wght@400&family=Fredoka:wght@400&family=Comic+Neue:wght@400&display=swap" rel="stylesheet" />
-
-  <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-
-
-<body class="bg-[var(--white)] text-[var(--deep-navy-text)]">
-<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
-<main class="flex-grow">
-<section class="hero-bg text-center py-24 px-6 flex flex-col items-center justify-center min-h-[70vh]">
-<div class="hero-content flex flex-col items-center space-y-10">
-  <div class="relative w-56 h-56">
-    <img alt="Abstract brain graphic" class="w-full h-full object-contain pulsating-glow" src="assets\images\logo.png"/>
-  </div>
-<p class="text-2xl text-[var(--deep-navy-text)] callout max-w-lg mx-auto">Playful, science-driven challenges to sharpen your logic and problem-solving skills.</p>
-  <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
-    <a class="bg-[var(--sunflower-yellow)] text-[var(--deep-navy)] font-bold py-4 px-10 rounded-full text-xl transform transition-transform duration-300 ease-in-out shadow-lg hover:bg-[var(--bright-orange)] hover:scale-105" href="#community">
-      Join the Community
-    </a>
-    <a class="bg-[var(--electric-blue)] text-white font-bold py-4 px-10 rounded-full text-xl transform transition-transform duration-300 ease-in-out shadow-lg hover:bg-[var(--vivid-purple)] hover:scale-105" href="#newsletter">
-      Learn More
-    </a>
-  </div>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BetaEdge - Career Readiness</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&amp;family=Lato:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1574bc",
+            "background-light": "#f6f7f8",
+            "background-dark": "#111a21",
+            "deep-blue": "#0D2C54",
+            "emerald-green": "#28A745",
+            "warm-orange": "#F9A826",
+            "light-grey": "#F0F3F4",
+            "text-light": "#111518",
+            "text-dark": "#FFFFFF",
+            "text-muted-light": "#637888",
+            "text-muted-dark": "#A0AEC0",
+          },
+          fontFamily: {
+            heading: ["Montserrat", "sans-serif"],
+            body: ["Lato", "sans-serif"],
+            tagline: ["Montserrat", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "0.75rem",
+            xl: "1rem",
+            full: "9999px"
+          },
+          keyframes: {
+            scroll: {
+              '0%': {
+                transform: 'translateX(0)'
+              },
+              '100%': {
+                transform: 'translateX(calc(-250px * 3))'
+              }
+            }
+          },
+          animation: {
+            'scroll': 'scroll 20s linear infinite',
+          }
+        },
+      },
+    };
+  </script>
+<style>
+    .font-heading {
+      font-family: "Montserrat",
+      sans-serif;
+      font-weight: 700;
+    }
+    .font-body {
+      font-family: "Lato",
+      sans-serif;
+      font-weight: 400;
+    }
+    .font-tagline {
+      font-family: "Montserrat",
+      sans-serif;
+      font-style: italic;
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-body text-text-light dark:text-text-dark">
+<div class="relative min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<header class="relative text-white">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcd9-vFWsRfWviSGL-s-D0tWvHesnDUZ5L44_O9mgRdIpQ5q1N-VWohIGVgTUjD8SmMzfLoI3wjjSga24-3XPr3VH1fcm9jP7zDVI0XJkkny12N3syZ52x9KNdBH6LfPsu1d-EH-DBgameKaxn1n5JjYKytBFY0bawJPLQhG6iXoIPguERD053Q6u0yzRFsowi1bBHAA0S3FZyiwV1I6JIpGdVM_uesPpSup0WUT15mNzTptXXi7ueA93TZOmrw1W5YXrgYrvSysM");'></div>
+<div class="absolute inset-0 bg-deep-blue/80"></div>
+<div class="relative z-10 mx-auto max-w-7xl px-4 py-10 sm:py-20">
+<div class="h-16 w-48 bg-white/20 rounded-lg mx-auto mb-8 flex items-center justify-center">
+<span class="text-white/80 font-heading">BetaEdge Logo</span>
+</div>
+<div class="text-center">
+<h1 class="font-heading text-4xl leading-tight sm:text-5xl md:text-6xl">Your Key to Career Readiness and Growth</h1>
+<p class="font-tagline mt-4 text-lg sm:text-xl">
+              From campus to corporate, sharpen your edge with test prep, soft skills, and career mentoring.
+            </p>
+<div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+<button class="w-full rounded-lg bg-warm-orange px-8 py-3 font-heading text-deep-blue sm:w-auto">
+                Join the BetaEdge Community
+              </button>
+<button class="w-full rounded-lg bg-light-grey px-8 py-3 font-heading text-deep-blue sm:w-auto">
+                Subscribe for Free Tutorials
+              </button>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class="py-16 sm:py-24">
+<div class="mx-auto max-w-7xl px-4">
+<h2 class="font-heading text-3xl text-deep-blue dark:text-white sm:text-4xl">For Students &amp; Young Graduates</h2>
+<div class="mt-12 overflow-hidden relative group">
+<div class="flex animate-scroll group-hover:pause">
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfOlQwPT4WWTvfmmlhIoEVj4OMMtEWWgumTm8KPSsi1m2ZJTIGTNTnSnCknFv4N_5QGrD-pLd2PJOtkzJRmAREAwzKGmUS-4zj4rSbq4aTZa6g64dqnj-v-gI_nQCTsWIwGGTk6rvDR398GdD29pmetdY_riSJnSa_FeAgmAAhUbgDTwI_q9lxgCN3Rca0Er5cq6nK2YQEIVd3AsQyg18u6TK3K31jWcSDVbeUqgxhDABArqYqhOs2IiEe5JI89vu7jWL-L-E-WbQ");'></div>
+<h3 class="font-heading mt-6 text-xl text-emerald-green">Before</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">Navigating the transition from academia to the professional world can be daunting. We provide the foundational skills and knowledge to help you stand out.</p>
+</div>
+</div>
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDO5jXTUJ7BxPT_0btXCGO-87TSZMLwHEQPvoLJVc_6S5qFPoJj3cgBnmttfICV72aK4H1ebqxqFGvF_KJBaU0U5kAUGijI8Bw12TWTcMchhbhseqVlhhvf_PUCpTM3CCYBBmZ6aYdzVjjMR7mDCSazaeOlqPpswx_9L0FnOsK7v9STBP8OPuG1X_bPfZ5yHTD0sNFU1EiHSMgKx6PUsx_yf8xLeRLWrfnd77ohk4oxdZL_es2aegS5e0_MYN1EgjiJYwB3bs3JsA");'></div>
+<h3 class="font-heading mt-6 text-xl text-emerald-green">After</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">Equipped with the right tools and mindset, you'll be ready to tackle any challenge and achieve your career aspirations.</p>
+</div>
+</div>
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-h5KUYuN-KQbqkSG_wbpKhFyo2BhtjV-DgX0Ydk6YkoKVo1ACVDVi-u5Y77t7Pv2ueM1rF5aQvSDpZvbBA2Ngl3eFtF1-GgUmAnLEat70TPRvsfTC1KCYVMfy41TVMJR-4GD-h1PDeBjjvsInjF8-0A7fZCASdQ5jRAboBi34MfxejG-DeCsOtv3_hiM_a2MBsB1WkO6Os-2SVmJoi_qczkTjpq_MjZLUuw94Gv3GSj3xP1dabwgwtR1StZLkJw_dvKg9Hnz1qNI");'></div>
+<h3 class="font-heading mt-6 text-xl text-emerald-green">Bridge</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">We bridge the gap between your current skills and the demands of the job market, ensuring a smooth and successful transition.</p>
+</div>
+</div>
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfOlQwPT4WWTvfmmlhIoEVj4OMMtEWWgumTm8KPSsi1m2ZJTIGTNTnSnCknFv4N_5QGrD-pLd2PJOtkzJRmAREAwzKGmUS-4zj4rSbq4aTZa6g64dqnj-v-gI_nQCTsWIwGGTk6rvDR398GdD29pmetdY_riSJnSa_FeAgmAAhUbgDTwI_q9lxgCN3Rca0Er5cq6nK2YQEIVd3AsQyg18u6TK3K31jWcSDVbeUqgxhDABArqYqhOs2IiEe5JI89vu7jWL-L-E-WbQ");'></div>
+<h3 class="font-heading mt-6 text-xl text-emerald-green">Before</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">Navigating the transition from academia to the professional world can be daunting. We provide the foundational skills and knowledge to help you stand out.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="rounded-lg bg-emerald-green px-8 py-3 font-heading text-white">Explore Student Programs</button>
+</div>
 </div>
 </section>
-<section class="py-16 px-6 bg-[var(--white)] text-[var(--deep-navy-text)]">
-<div class="max-w-4xl mx-auto">
-<div class="text-center mb-12">
-<h2 class="text-4xl font-bold tracking-tight text-[var(--vivid-purple)]">About</h2>
-<h1 class="text-7xl font-bold text-[var(--white)] crackit-text">
-<span class="text-[var(--electric-blue)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">C</span><span class="text-[var(--electric-blue)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">r</span><span class="text-[var(--electric-blue)]" style="text-shadow: -2px -2px 0 var(--viv id-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">a</span><span class="text-[var(--electric-blue)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">c</span><span class="text-[var(--electric-blue)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">k</span><span class="text-[var(--bright-orange)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">i</span><span class="text-[var(--bright-orange)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">t</span><span class="text-[var(--sunflower-yellow)]" style="text-shadow: -2px -2px 0 var(--vivid-purple), 2px -2px 0 var(--vivid-purple), -2px 2px 0 var(--vivid-purple), 2px 2px 0 var(--vivid-purple);">!</span>
-</h1>
-<p class="mt-4 text-lg max-w-2xl mx-auto font-['Montserrat']">Ready to train your brain to think sharper, faster, and smarter? Crackit! is your weekly dose of fun challenges designed to boost your problem-solving skills. We're all about making you a better thinker for your exams, your job, and your everyday life. Let's get cracking!</p>
+<section class="bg-light-grey dark:bg-deep-blue/20 py-16 sm:py-24">
+<div class="mx-auto max-w-7xl px-4">
+<h2 class="font-heading text-3xl text-deep-blue dark:text-white sm:text-4xl">For Entry-Level Professionals</h2>
+<div class="mt-12 overflow-hidden relative group">
+<div class="flex animate-scroll group-hover:pause">
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCrfclMfqXPPo5WWM5pkM7S3Do9B9Yqn4ANJscYHVrjXkc0stYD0IasCYLuHB_dMfKqvfBEHDUWfa3rGcof8gM82ljjBvdh2UM69OqGqOW2FfRWZl1K7XHwwD-a88sMvvZy0JK9zLpg6ovmuDMSxDGSnDv1gY3aUwpq1imDElRICGXM6FFUlT0NIC4P10phg48qG4Ns3vV1Y7jLAPBsJHAb7FpbKo4Hk_b72zBB-CTCTYLySf03DGh2lrPKEoxnMiTRkTYgyNyB110");'></div>
+<h3 class="font-heading mt-6 text-xl text-warm-orange">Before</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">You've taken the first step, but the journey continues. We help you identify your strengths and areas for growth to accelerate your career.</p>
+</div>
+</div>
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAo5wnx68B7HpowzBFWphh-uXjtKCMTtrcDAFAF532MTLMlEOOxq1AIIAn__ywZffqKP3wdVdA2BXJABRFwWktd6NRf32J1TFrOQhugF7SlU3V2FFGRUGYAWs3AjR46dlFypPaUoNNf4eveA8ENsQc9vRYNC7pBCQsL-PrX2yI5JKzPSuqggvnN2elFzVAWUsZbhz9Z9vX-Q11ESfbeGlMCJ6hobMQQfhyy0K7Loh0QXkM0DKfuXebv7h6wlZWRaTIWi4fUT6BqbSs");'></div>
+<h3 class="font-heading mt-6 text-xl text-warm-orange">After</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">With enhanced skills and a strategic approach, you'll be poised for promotions and new opportunities.</p>
+</div>
+</div>
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrMHZJ6e0NdcyZWgDgRc3SNEDHpy03DV9KNu7lMu7xsH9jTbXK9bHDXYyARIaqKuW1myq5TU5GH5h9pShLOay-oelW7D2dkWY2NFIhGC4XE4QsHts83dDPyP6gdbqOExvKQjSWY3vUJm5RPEM_bQsei_DInNRg-07D65anM5hsVaa7pL7zySQuI3OgFGO29enLbNLd775FigTVxXKPgIx4IgTfMqZcDqTz0FJS1Odsdv1ADcPY_6dlgM6FRm0lMhpJ6quXNvpPj-k");'></div>
+<h3 class="font-heading mt-6 text-xl text-warm-orange">Bridge</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">We bridge the gap between your current role and your desired career path, providing the support and guidance you need to succeed.</p>
+</div>
+</div>
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCrfclMfqXPPo5WWM5pkM7S3Do9B9Yqn4ANJscYHVrjXkc0stYD0IasCYLuHB_dMfKqvfBEHDUWfa3rGcof8gM82ljjBvdh2UM69OqGqOW2FfRWZl1K7XHwwD-a88sMvvZy0JK9zLpg6ovmuDMSxDGSnDv1gY3aUwpq1imDElRICGXM6FFUlT0NIC4P10phg48qG4Ns3vV1Y7jLAPBsJHAb7FpbKo4Hk_b72zBB-CTCTYLySf03DGh2lrPKEoxnMiTRkTYgyNyB110");'></div>
+<h3 class="font-heading mt-6 text-xl text-warm-orange">Before</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">You've taken the first step, but the journey continues. We help you identify your strengths and areas for growth to accelerate your career.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="rounded-lg bg-warm-orange px-8 py-3 font-heading text-deep-blue">Advance Your Career</button>
 </div>
 </div>
 </section>
-<section class="bg-white py-16 px-6">
-<div class="max-w-4xl mx-auto">
-<div class="text-center mb-12">
-<h2 class="text-4xl font-bold tracking-tight text-[var(--vivid-purple)]">What You'll Get</h2>
+<section class="py-16 sm:py-24">
+<div class="mx-auto max-w-7xl px-4">
+<h2 class="font-heading text-3xl text-deep-blue dark:text-white sm:text-4xl">For Corporates</h2>
+<div class="mt-12 overflow-hidden relative group">
+<div class="flex animate-scroll group-hover:pause">
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAnX0MkCK5D_ZXeY-NpTikQ6hcIoyEFCM2MZ_iseybSOdBfsxWeF6lSzExPd7YypU8ocaEnJQKUMaa7YKH_dVR7wN79zGFSe3Li55gfJb18clx88VKlPtS-tBFJoMxoH1EmKA8EODQNZIDm1K4vU14zwRfjq-TFc8ek_Z-j1CQE0WzMlqwQoMZ4rUjfwslVOIQ1wlpf1xpq5KCkXvKan-XqPdjzr2eFMZ3PB-BBZpWF-0KjX_iS2ZdUmC-cWdVw2qqVHlcj35OL48I");'></div>
+<h3 class="font-heading mt-6 text-xl text-primary">Before</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">Your team's potential is untapped. We provide customized training solutions to enhance their skills and performance.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="text-center p-6 bg-gray-50 rounded-2xl shadow-sm transition hover:shadow-lg hover:-translate-y-1 text-[var(--deep-navy-text)]">
-<div class="inline-block p-4 bg-[var(--electric-blue)] rounded-full mb-4">
-<span class="material-symbols-outlined text-white text-4xl"> feed </span>
 </div>
-<h3 class="text-xl font-bold text-[var(--electric-blue)]">Exams &amp; Assessments</h3>
-<p class="text-base mt-2">Ace GMAT, GRE, job tests, case studies, and aptitude tests with targeted resorces and trainings.</p>
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzaPuryGcMmB1qd2PKAsZrygvHSPaNWZH5wO-w123QZ_mJzJoRp0_cg6w7XyFRKpHgWDGYMhII0ofyVGjRkHo7JNh73UqwgdXnmpHy3EpCAyCXdrmi6FTMsdvukZPSXFwOnA8Ukql2jmH1-8OpxfURtVyUpQ0xQ3PLHp-BTl7PgeMvIyKCGSZxXlqDn9FYX1PsPdfx2NJ3xgxRaP8fNssiDTGBbf4MwSqkMQPaYMtuEW6iOyPJPmXdTHA_TkL1_gq4NbEvYliNfgY");'></div>
+<h3 class="font-heading mt-6 text-xl text-primary">After</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">A highly skilled and motivated workforce drives innovation and achieves business objectives.</p>
 </div>
-<div class="text-center p-6 bg-gray-50 rounded-2xl shadow-sm transition hover:shadow-lg hover:-translate-y-1 text-[var(--deep-navy-text)]">
-<div class="inline-block p-4 bg-[var(--bright-orange)] rounded-full mb-4">
-<span class="material-symbols-outlined text-white text-4xl"> lightbulb </span>
 </div>
-<h3 class="text-xl font-bold text-[var(--bright-orange)]">Real-Life Problem Solving</h3>
-<p class="text-base mt-2">Apply science and math principles to conquer everyday challenges with logic and flair.</p>
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWxNzO3HcQTbV_iiwHCGtJlroYpodCf8l8yxJZmhRsbvuW7c9ovPi925-COBRxNgc6jXURnUp6AyQcWpudOW-RpBHlA5pmETL8ExH8germG-LKnLf2N6kYIydjYX5Ys3gz__YCu_cvOi-LDpWcCXJFmo-V26X3DPPlP_1BSDRijcabrvTLRg2TN3-gDCe1YnyghiXrzelo46M6Rr-YyTqrS66IGGiLaz02sNQa_FOvRCSNPlS-6pdlsI1fNqvkTGzIY8g6tiO5D3M");'></div>
+<h3 class="font-heading mt-6 text-xl text-primary">Bridge</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">We bridge the gap between your current team capabilities and your organizational goals, fostering a culture of continuous learning and growth.</p>
 </div>
-<div class="text-center p-6 bg-gray-50 rounded-2xl shadow-sm transition hover:shadow-lg hover:-translate-y-1 text-[var(--deep-navy-text)]">
-<div class="inline-block p-4 bg-[var(--vivid-purple)] rounded-full mb-4">
-<span class="material-symbols-outlined text-white text-4xl"> mood </span>
 </div>
-<h3 class="text-xl font-bold text-[var(--vivid-purple)]">Analytical Thinking</h3>
-<p class="text-base mt-2">Sharpen your ability to break problems into parts, spot patterns and solve with clarity.</p>
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAnX0MkCK5D_ZXeY-NpTikQ6hcIoyEFCM2MZ_iseybSOdBfsxWeF6lSzExPd7YypU8ocaEnJQKUMaa7YKH_dVR7wN79zGFSe3Li55gfJb18clx88VKlPtS-tBFJoMxoH1EmKA8EODQNZIDm1K4vU14zwRfjq-TFc8ek_Z-j1CQE0WzMlqwQoMZ4rUjfwslVOIQ1wlpf1xpq5KCkXvKan-XqPdjzr2eFMZ3PB-BBZpWF-0KjX_iS2ZdUmC-cWdVw2qqVHlcj35OL48I");'></div>
+<h3 class="font-heading mt-6 text-xl text-primary">Before</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">Your team's potential is untapped. We provide customized training solutions to enhance their skills and performance.</p>
 </div>
-<div class="text-center p-6 bg-gray-50 rounded-2xl shadow-sm transition hover:shadow-lg hover:-translate-y-1 text-[var(--deep-navy-text)]">
-<div class="inline-block p-4 bg-[var(--sunflower-yellow)] rounded-full mb-4">
-<span class="material-symbols-outlined text-white text-4xl"> groups </span>
 </div>
-<h3 class="text-xl font-bold text-[var(--sunflower-yellow)]">Community Learning</h3>
-<p class="text-base mt-2">Join a tribe of curious minds who love cracking challenges together.</p>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="rounded-lg bg-primary px-8 py-3 font-heading text-white">Corporate Training Solutions</button>
+</div>
+</div>
+</section>
+<section class="bg-light-grey dark:bg-deep-blue/20 py-16 sm:py-24">
+<div class="mx-auto max-w-7xl px-4">
+<h2 class="font-heading text-center text-3xl text-deep-blue dark:text-white sm:text-4xl">Our Services</h2>
+<div class="mt-12">
+<h3 class="font-heading text-2xl text-deep-blue dark:text-white sm:text-3xl">Monetized Services</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">Invest in your future with our comprehensive programs.</p>
+<div class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+<div class="rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-background-dark p-6 text-center">
+<span class="material-symbols-outlined text-4xl text-warm-orange">school</span>
+<h4 class="font-heading mt-4 text-lg">Bootcamps</h4>
+</div>
+<div class="rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-background-dark p-6 text-center">
+<span class="material-symbols-outlined text-4xl text-warm-orange">person</span>
+<h4 class="font-heading mt-4 text-lg">One-on-One Coaching</h4>
+</div>
+<div class="rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-background-dark p-6 text-center">
+<span class="material-symbols-outlined text-4xl text-warm-orange">book_2</span>
+<h4 class="font-heading mt-4 text-lg">Learning Materials</h4>
+</div>
+<div class="rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-background-dark p-6 text-center">
+<span class="material-symbols-outlined text-4xl text-warm-orange">business_center</span>
+<h4 class="font-heading mt-4 text-lg">Corporate Packages</h4>
+</div>
+</div>
+</div>
+<div class="mt-16">
+<h3 class="font-heading text-2xl text-deep-blue dark:text-white sm:text-3xl">Free/Impact Services</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">Access valuable resources and connect with our community.</p>
+<div class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<div class="rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-background-dark p-6 text-center">
+<span class="material-symbols-outlined text-4xl text-emerald-green">smart_display</span>
+<h4 class="font-heading mt-4 text-lg">Webinars</h4>
+</div>
+<div class="rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-background-dark p-6 text-center">
+<span class="material-symbols-outlined text-4xl text-emerald-green">campaign</span>
+<h4 class="font-heading mt-4 text-lg">Awareness Content</h4>
+</div>
+<div class="rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-background-dark p-6 text-center">
+<span class="material-symbols-outlined text-4xl text-emerald-green">groups</span>
+<h4 class="font-heading mt-4 text-lg">Community Study Groups</h4>
+</div>
 </div>
 </div>
 </div>
 </section>
-<section class="bg-[var(--deep-navy)] py-16 px-6">
-<div class="max-w-4xl mx-auto">
-<div class="text-center mb-12">
-<h2 class="text-4xl font-bold tracking-tight text-[var(--white)]">From the Crackit! Blog</h2>
-<p class="mt-4 text-lg max-w-2xl mx-auto text-slate-300 callout">Fresh insights to fuel your curiosity.</p>
+<section class="py-16 sm:py-24">
+<div class="mx-auto max-w-7xl px-4">
+<h2 class="font-heading text-center text-3xl text-deep-blue dark:text-white sm:text-4xl">Why Choose BetaEdge?</h2>
+<p class="mt-4 text-center text-text-light dark:text-text-muted-dark">Our Unique Selling Points</p>
+<div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+<div class="text-center">
+<span class="material-symbols-outlined text-5xl text-primary">location_on</span>
+<h4 class="font-heading mt-4 text-lg">Tailored to local realities</h4>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- <a class="block group" href="#">
-<div class="bg-[rgba(255,255,255,0.05)] rounded-2xl overflow-hidden transition-all duration-300 hover:bg-[rgba(255,255,255,0.1)] hover:shadow-2xl hover:shadow-[var(--electric-blue)]/20">
-<div class="flex items-center p-4 space-x-4">
-<div class="flex-shrink-0">
-<img alt="Thumbnail for 'The Art of Deduction'" class="w-20 h-20 rounded-lg object-cover border-2 border-[var(--electric-blue)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJwE2s_zZ7TL_Ej3iGZab_AsT7RivunJbeAVivMCs8qiJv95FzM3NlA-otS1G89MaOhziiHilq3bUlAg_CB6ljfY1lLwjph471KHUgzxNfkelEd2Jla86hd5_4jsNiRfMKVup4f9cQDiL45pFZgRdeOAGOrcCKoVFWT58rLhihHx7qy1w-TOxQ8O0xjNrHeubsbbe02z8kN3Ytu2dnzn8qH2oP58VIcpo2HDFhK0dvRK6B6NFNJq6d7-YkGaB6Mc3dCOvK35axsQ"/>
+<div class="text-center">
+<span class="material-symbols-outlined text-5xl text-primary">attach_money</span>
+<h4 class="font-heading mt-4 text-lg">Affordable, accessible, and practical</h4>
 </div>
-<div class="flex-1">
-<h3 class="text-lg font-bold text-white transition-colors duration-300 group-hover:text-[var(--electric-blue)]">The Art of Deduction: Thinking Like Sherlock</h3>
+<div class="text-center">
+<span class="material-symbols-outlined text-5xl text-primary">diversity_3</span>
+<h4 class="font-heading mt-4 text-lg">A blend of preparation + skills + community</h4>
 </div>
+<div class="text-center">
+<span class="material-symbols-outlined text-5xl text-primary">trending_up</span>
+<h4 class="font-heading mt-4 text-lg">Growth-focused</h4>
 </div>
-</div>
-</a> -->
-<!-- <a class="block group" href="#">
-<div class="bg-[rgba(255,255,255,0.05)] rounded-2xl overflow-hidden transition-all duration-300 hover:bg-[rgba(255,255,255,0.1)] hover:shadow-2xl hover:shadow-[var(--bright-orange)]/20">
-<div class="flex items-center p-4 space-x-4">
-<div class="flex-shrink-0">
-<img alt="Thumbnail for '5 Paradoxes That Will Blow Your Mind'" class="w-20 h-20 rounded-lg object-cover border-2 border-[var(--bright-orange)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7Swiem45ZYo6ZsN837Ec2hT9L1kg23HrUd4Ki34n6ebUtEnNr2cFv8SuALy0CtIDWcH_irj716D2UZ-yYVHLH2FuzPvithVxdntr5DAF9qsibcJEwEHdz5xz7rYRdCYMzoofV7zvZmuUbrTpEccV8wCIdiIS-FLc7HBL5uA5scyRKgg94QUf0u-fV317XD6NzsXwWoToOJOPuSAaQ0qUd_OV6k7c86a5e1SrVqRjLGQrqxnxEQRrhGyrP9TycgnKdGInxEq5-QA"/>
-</div>
-<div class="flex-1">
-<h3 class="text-lg font-bold text-white transition-colors duration-300 group-hover:text-[var(--bright-orange)]">5 Paradoxes That Will Blow Your Mind</h3>
-</div>
-</div>
-</div>
-</a> -->
-<!-- <a class="block group" href="#">
-<div class="bg-[rgba(255,255,255,0.05)] rounded-2xl overflow-hidden transition-all duration-300 hover:bg-[rgba(255,255,255,0.1)] hover:shadow-2xl hover:shadow-[var(--sunflower-yellow)]/20">
-<div class="flex items-center p-4 space-x-4">
-<div class="flex-shrink-0">
-<img alt="Thumbnail for 'Problem Solving in the Real World'" class="w-20 h-20 rounded-lg object-cover border-2 border-[var(--sunflower-yellow)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv8E5mTUphezn7T5ENlCuENxPdFEtFg_SAlUssK2YN6WKBLXilPHptx-S8diUzxfiIaFfDarbRTeTyg995GKpRxEMaS2wFGxLm3reQVnQLE2BxfEoEr_jzDy8zG9EMg__cPZdUjyM8p7FP985r2EYOIh2ZGN_o2QacahMOU1Kk60RrNFW1j7dQ-hbEXrMM4h3RycKRH_-NBGbilohmVVxaTeL24fpmd8jPdfoDFCGBqVNNch3nxxd7QRBg5MHC3TtbLxalDFlfYw"/>
-</div>
-<div class="flex-1">
-<h3 class="text-lg font-bold text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]">Problem Solving in the Real World: Beyond the Textbook</h3>
-</div>
-</div>
-</div>
-</a> -->
-</div>
-<div class="text-center mt-12">
-<a class="bg-transparent border-2 border-[var(--sunflower-yellow)] text-[var(--sunflower-yellow)] font-bold py-3 px-8 rounded-full text-lg transform hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-[var(--sunflower-yellow)] hover:text-[var(--deep-navy)] shadow-lg hover:shadow-[var(--sunflower-yellow)]/30" href="#"> Explore All Resources </a>
 </div>
 </div>
 </section>
-<section class="bg-[var(--vivid-purple)] py-20 px-6">
-<div class="max-w-3xl mx-auto text-center">
-<h2 class="text-4xl font-bold tracking-tight text-white">Stay Ahead of the Curve!</h2>
-<p class="mt-4 text-lg text-white/90 callout">Subscribe to our newsletter for exclusive content, early access to challenges, and brain-boosting tips delivered straight to your inbox.</p>
-<form class="mt-8 flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-<input class="flex-grow w-full px-5 py-4 rounded-full text-lg text-[var(--deep-navy-text)] bg-white/90 placeholder:text-gray-500 focus:outline-none focus:ring-4 focus:ring-[var(--sunflower-yellow)] transition-all duration-300" placeholder="Your best email" type="email"/>
-<button class="bg-[var(--sunflower-yellow)] text-[var(--deep-navy)] font-bold py-4 px-8 rounded-full text-lg transform hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg hover:bg-[var(--bright-orange)]" type="submit">Subscribe</button>
-</form>
+<section class="bg-deep-blue py-16 text-white sm:py-24">
+<div class="mx-auto max-w-2xl px-4 text-center">
+<h2 class="font-heading text-3xl sm:text-4xl">Stay Ahead with Free Tutorials</h2>
+<p class="font-tagline mt-4 text-lg">Get exclusive access to free tutorials, career tips, and industry insights.</p>
+<div class="mt-8 flex flex-col gap-4 sm:flex-row">
+<input class="w-full flex-grow rounded-lg border-0 bg-white/20 px-4 py-3 text-white placeholder-white/70 focus:ring-2 focus:ring-warm-orange" placeholder="Your email address" type="email"/>
+<button class="rounded-lg bg-warm-orange px-8 py-3 font-heading text-deep-blue">Subscribe</button>
+</div>
 </div>
 </section>
-<section class="bg-white text-[var(--deep-navy-text)] py-20 px-6" id="community">
-<div class="max-w-3xl mx-auto text-center">
-<h2 class="text-4xl font-bold tracking-tight text-[var(--vivid-purple)]">Join the Community</h2>
-<p class="mt-4 text-lg text-slate-600 font-['Montserrat']">Connect with fellow thinkers, get exclusive content, and be the first to know about new challenges.</p>
-<div class="mt-8">
-<a class="bg-[var(--sunflower-yellow)] text-[var(--deep-navy)] font-bold py-4 px-8 rounded-full text-lg transform hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg hover:bg-[var(--bright-orange)]" href="#"> Join Us </a>
+<section class="py-16 sm:py-24">
+<div class="mx-auto max-w-2xl px-4 text-center">
+<h2 class="font-heading text-3xl text-deep-blue dark:text-white sm:text-4xl">Don’t just prepare. Thrive.</h2>
+<div class="mt-8 flex flex-col items-center justify-center gap-4">
+<button class="w-full max-w-sm rounded-lg bg-warm-orange px-8 py-3 font-heading text-deep-blue">Join the BetaEdge Community</button>
+<button class="w-full max-w-sm rounded-lg bg-light-grey px-8 py-3 font-heading text-deep-blue">Follow Us on Social Media</button>
+<button class="w-full max-w-sm rounded-lg bg-light-grey px-8 py-3 font-heading text-deep-blue">Contact Us for Corporate Training</button>
 </div>
 </div>
 </section>
 </main>
-<footer class="bg-[var(--deep-navy)] text-white py-12 px-6 border-t border-[rgba(255,255,255,0.1)]">
-<div class="max-w-4xl mx-auto flex flex-col items-center space-y-8">
-<h3 class="text-2xl font-bold text-center">Contact Us</h3>
-<div class="flex flex-col items-center space-y-4">
-<a class="social-icon group flex items-center space-x-3 rounded-full bg-[rgba(255,255,255,0.05)] px-6 py-3 transition-all duration-300 hover:bg-[rgba(255,255,255,0.1)]" href="#">
-<i class="fab fa-instagram text-3xl text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]"></i>
-<span class="font-bold text-xl text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]">@Crackit_hq</span>
+<footer class="bg-light-grey dark:bg-deep-blue/20 py-8">
+<div class="mx-auto max-w-7xl px-4 text-center text-text-muted-light dark:text-text-muted-dark">
+<p>© 2024 BetaEdge. All rights reserved.</p>
+<div class="mt-4 flex justify-center space-x-6">
+<a class="hover:text-primary dark:hover:text-warm-orange" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919A48.426 48.426 0 0112 2.163zm0 3.846c-3.405 0-6.155 2.75-6.155 6.155s2.75 6.155 6.155 6.155 6.155-2.75 6.155-6.155S15.405 6.009 12 6.009z" fill-rule="evenodd"></path>
+<path d="M12 16.061c-2.23 0-4.04-1.81-4.04-4.04s1.81-4.04 4.04-4.04 4.04 1.81 4.04 4.04-1.81 4.04-4.04 4.04z"></path>
+<path d="M16.949 7.828a1.31 1.31 0 11-2.62 0 1.31 1.31 0 012.62 0z"></path>
+</svg>
 </a>
-<a class="social-icon group flex items-center space-x-3 rounded-full bg-[rgba(255,255,255,0.05)] px-6 py-3 transition-all duration-300 hover:bg-[rgba(255,255,255,0.1)]" href="mailto:hafsahanibaba@gmail.com">
-<span class="material-symbols-outlined text-3xl text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]">
-                        mail
-                    </span>
-<span class="font-bold text-xl text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]">hafsahanibaba@gmail.com</span>
+<a class="hover:text-primary dark:hover:text-warm-orange" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.28-1.1-.68-1.62-1.12-.32-.27-.64-.56-.99-.82l-.23-.17c-.33.16-.66.33-.99.49l-.2.1c-1.1.52-2.25.88-3.47.98v-3.79c1.47-.07 2.92-.37 4.24-.99.58-.27 1.13-.63 1.64-1.07.33-.28.64-.6.94-.94.08-.09.15-.18.23-.27-.23-.2-.48-.38-.73-.55l-.23-.17c-.35.4-.75.76-1.2 1.07l-.2.13c-1.16.7-2.39 1.05-3.69 1.02V8.83c1.44.05 2.89.35 4.2.97.57.28 1.1.68 1.62 1.12.32.27.64.56.99.82l.23.17c.33-.16.66-.33.99-.49l.2-.1c1.1-.52 2.25-.88 3.47-.98V4.85c-1.47.07-2.92.37-4.24.99-.58.27-1.13-.63-1.64-1.07-.33-.28-.64-.6-.94-.94a.5.5 0 00-.23-.27c.23-.2.48-.38.73-.55l.23-.17c.35-.4.75-.76 1.2-1.07l.2-.13c1.16-.7 2.39-1.05 3.69-1.02V.02h-4.24z"></path>
+</svg>
 </a>
-<a class="social-icon group flex items-center space-x-3 rounded-full bg-[rgba(255,255,255,0.05)] px-6 py-3 transition-all duration-300 hover:bg-[rgba(255,255,255,0.1)]" href="tel:+2349049120142">
-<span class="material-symbols-outlined text-3xl text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]">
-                        phone
-                    </span>
-<span class="font-bold text-xl text-white transition-colors duration-300 group-hover:text-[var(--sunflower-yellow)]">+2349049120142</span>
+<a class="hover:text-primary dark:hover:text-warm-orange" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.32 12.88-1.89.94c-.25.13-.54.04-.69-.2l-1.3-2.25c-.24-.42-.03-.95.4-1.19l.23-.13c.43-.24.96.02 1.19.45l.65 1.12.98.49c.28.14.39.48.24.75zm-7.97-.24.87.44c.28.14.61.05.79-.22l2.4-3.6c.24-.36.1-.84-.33-1.05l-.24-.12c-.43-.21-.94.02-1.15.42l-1.5 2.6-1.08.53c-.3.15-.42.5-.26.8z"></path>
+</svg>
 </a>
 </div>
-<div class="text-center callout text-lg bg-[rgba(255,255,255,0.1)] py-3 px-6 rounded-full shadow-lg mt-8">
-<p class="text-[var(--sunflower-yellow)]">Crackit! Bootcamp coming soon…</p>
-</div>
-<p class="text-center text-sm text-slate-400 mt-8">© 2024 Crackit! All Rights Reserved.</p>
 </div>
 </footer>
 </div>
