@@ -14,45 +14,62 @@
       theme: {
         extend: {
           colors: {
-            primary: "#1574bc",
-            "background-light": "#f6f7f8",
-            "background-dark": "#111a21",
-            "deep-blue": "#0D2C54",
-            "emerald-green": "#28A745",
-            "warm-orange": "#F9A826",
-            "light-grey": "#F0F3F4",
-            "text-light": "#111518",
-            "text-dark": "#FFFFFF",
-            "text-muted-light": "#637888",
-            "text-muted-dark": "#A0AEC0",
+        primary: "#1574bc",
+        "background-light": "#f6f7f8",
+        "background-dark": "#111a21",
+        "deep-blue": "#0D2C54",
+        "emerald-green": "#28A745",
+        "warm-orange": "#F9A826",
+        "light-grey": "#F0F3F4",
+        "text-light": "#111518",
+        "text-dark": "#FFFFFF",
+        "text-muted-light": "#637888",
+        "text-muted-dark": "#A0AEC0",
           },
           fontFamily: {
-            heading: ["Montserrat", "sans-serif"],
-            body: ["Lato", "sans-serif"],
-            tagline: ["Montserrat", "sans-serif"],
+        heading: ["Montserrat", "sans-serif"],
+        body: ["Lato", "sans-serif"],
+        tagline: ["Montserrat", "sans-serif"],
           },
           borderRadius: {
-            DEFAULT: "0.5rem",
-            lg: "0.75rem",
-            xl: "1rem",
-            full: "9999px"
+        DEFAULT: "0.5rem",
+        lg: "0.75rem",
+        xl: "1rem",
+        full: "9999px"
           },
           keyframes: {
-            scroll: {
-              '0%': {
-                transform: 'translateX(0)'
-              },
-              '100%': {
-                transform: 'translateX(calc(-250px * 3))'
-              }
+        scroll: {
+          '0%': {
+            transform: 'translateX(0)'
+          },
+          '100%': {
+            transform: 'translateX(calc(-250px * 3))'
           }
+        }
+          },
+          animation: {
+        scroll: "scroll 25s linear infinite",
+        pause: "none",
+          },
         },
-        animation: {
-          scroll: "scroll 25s linear infinite",
-        },
-      },
-    },
-  };
+      }
+    };
+</script>
+<script>
+  // Pause/Resume scroll on card tap
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".animate-scroll").forEach(function (el) {
+      let paused = false;
+      el.addEventListener("click", function () {
+        paused = !paused;
+        if (paused) {
+          el.style.animationPlayState = "paused";
+        } else {
+          el.style.animationPlayState = "running";
+        }
+      });
+    });
+  });
 </script>
 <style>
     .font-heading {
@@ -189,7 +206,21 @@
 <h3 class="font-heading mt-6 text-xl text-primary">For Students & Recent Graduates:</h3>
 <p class="mt-2 text-text-light dark:text-text-muted-dark">Gives you affordable bootcamps, one-on-one mentoring, and a supportive community to help you ace assessments and unlock opportunities.</p>
 </div>
+</div><div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAo5wnx68B7HpowzBFWphh-uXjtKCMTtrcDAFAF532MTLMlEOOxq1AIIAn__ywZffqKP3wdVdA2BXJABRFwWktd6NRf32J1TFrOQhugF7SlU3V2FFGRUGYAWs3AjR46dlFypPaUoNNf4eveA8ENsQc9vRYNC7pBCQsL-PrX2yI5JKzPSuqggvnN2elFzVAWUsZbhz9Z9vX-Q11ESfbeGlMCJ6hobMQQfhyy0K7Loh0QXkM0DKfuXebv7h6wlZWRaTIWi4fUT6BqbSs");'></div>
+<h3 class="font-heading mt-6 text-xl text-primary">For Professionals:</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">Helps you sharpen collaboration, communication, and productivity skills so you can thrive and become indispensable in your career.</p>
 </div>
+</div>
+<div class="flex-shrink-0 w-[80%] md:w-1/3 mx-3">
+<div class="flex flex-col h-full">
+<div class="h-48 w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrMHZJ6e0NdcyZWgDgRc3SNEDHpy03DV9KNu7lMu7xsH9jTbXK9bHDXYyARIaqKuW1myq5TU5GH5h9pShLOay-oelW7D2dkWY2NFIhGC4XE4QsHts83dDPyP6gdbqOExvKQjSWY3vUJm5RPEM_bQsei_DInNRg-07D65anM5hsVaa7pL7zySQuI3OgFGO29enLbNLd775FigTVxXKPgIx4IgTfMqZcDqTz0FJS1Odsdv1ADcPY_6dlgM6FRm0lMhpJ6quXNvpPj-k");'></div>
+<h3 class="font-heading mt-6 text-xl text-primary">For Organisations:</h3>
+<p class="mt-2 text-text-light dark:text-text-muted-dark">Designs tailored upskilling programs that transform raw talent into measurable impact, boosting team performance and productivity.</p>
+</div>
+</div>
+
 </div>
 </div>
 <div class="mt-12 text-center">
